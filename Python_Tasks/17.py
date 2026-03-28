@@ -11,9 +11,9 @@ def difference_third_power_evens(number):
     for digit in str(number):
         digit = int(digit)
         if digit % 2 == 0:
-            sum_evens_cubed += digit
+            sum_evens_cubed += digit ** 3
         else:
-            sum_odds_squared += digit
+            sum_odds_squared += digit ** 2
     return sum_evens_cubed - sum_odds_squared
 
 n = int(input())
